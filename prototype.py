@@ -66,7 +66,7 @@ def text_preprocess(text):
 with st.spinner():
     model = load_lstm_cnn()
 st.title('Klasifikasi Konten Eksplisit pada Lirik Lagu Berbahasa Indonesia Menggunakan LSTM-CNN')
-lirik = st.text_area('Masukkan lirik lagu yang ingin diklasifikasikan:', height=250)
+lirik = st.text_area('Masukkan lirik lagu yang ingin diklasifikasikan:', height=200)
 tombol = st.button('Klasifikasikan')
 if tombol:
     if lirik != '':
