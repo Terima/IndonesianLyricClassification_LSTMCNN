@@ -32,7 +32,7 @@ MAX_LEN = 698
 
 @st.cache_resource
 def load_lstm_cnn():
-    model = load_model('model/1')
+    model = load_model('model/lstm-cnn')
     return model
 
 @st.cache_resource
@@ -43,15 +43,9 @@ def load_tokenizer():
 
 def classify(data):
     predictions = model.predict(data)
-    threshold = 0.5  # Example threshold value
+    threshold = 0.5
     binary_predictions = (predictions > threshold).astype(int)
     return binary_predictions
-
-
-# @st.cache_resource
-# def load_ftmodel():
-#     ftmodel = FastText.load('ft100-gensim.model')
-#     return ftmodel
 
 def text_preprocess(text):
     text = text.lower()
@@ -65,7 +59,7 @@ def text_preprocess(text):
 
 with st.spinner():
     model = load_lstm_cnn()
-st.title('Klasifikasi Konten Eksplisit pada Lirik Lagu Berbahasa Indonesia Menggunakan LSTM-CNN')
+st.title('Klasifikasi Konten Eksplisit pada Lirik Lagu Berbahasa Indonesia Menggunakan Metode LSTM-CNN')
 lirik = st.text_area('Masukkan lirik lagu yang ingin diklasifikasikan:', height=200)
 tombol = st.button('Klasifikasikan')
 if tombol:
@@ -81,7 +75,5 @@ if tombol:
         else:
             label_hasil = "Bersih [0]"
         st.write("Hasil klasifikasi adalah: " + label_hasil)
-        
-        
     else:
         st.warning('Masukkan lirik terlebih dahulu')
