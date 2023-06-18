@@ -73,7 +73,7 @@ if tombol:
         if hasil == 1:
             label_hasil = "Eksplisit [1]"
         else:
-            label_hasil = "Bersih [0]"
-        st.write("Hasil klasifikasi adalah: " + label_hasil)
+            label_hasil = "Noneksplisit [0]"
+        st.info("Hasil klasifikasi adalah: " + label_hasil)
     else:
         st.warning('Masukkan lirik terlebih dahulu')
