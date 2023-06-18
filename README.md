@@ -1,2 +1,2 @@
-# implementasi_lstm-cnn
-Sebuah repository untuk implementasi model LSTM-CNN yang saya aplikasikan untuk mengklasifikasikan konten eksplisit pada lirik lagu berbahasa Indonesia
+# Klasifikasi Konten Eksplisit pada Lirik Lagu Berbahasa Indonesia menggunakan Metode LSTM-CNN
+Aplikasi yang dibangun menggunakan model LSTM-CNN untuk melakukan klasifikasi terhadap konten eksplisit pada lirik lagu berbahasa Indonesia
