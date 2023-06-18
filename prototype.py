@@ -11,7 +11,7 @@ import random as python_random
 import regex as re
 import pickle
 from gensim.models.fasttext import FastText
-from tensorflow.keras.models import load_model
+from keras.models import load_model
 
 from Sastrawi.Stemmer.StemmerFactory import StemmerFactory
 factory = StemmerFactory()
