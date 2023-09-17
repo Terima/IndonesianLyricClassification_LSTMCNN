@@ -76,4 +76,4 @@ if tombol:
             label_hasil = "Noneksplisit [0]"
         st.info("Hasil klasifikasi adalah: " + label_hasil)
     else:
-        st.warning('Silakan masukkan lirik terlebih dahulu.')
+        st.warning('Silakan masukkan lirik lagu terlebih dahulu.')
